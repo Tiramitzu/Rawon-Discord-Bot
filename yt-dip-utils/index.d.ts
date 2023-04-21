@@ -244,4 +244,4 @@ interface YTFlags {
 
 export function downloadExecutable(): Promise<void>;
 export function exec(url: string, options?: YTFlags, spawnOptions?: SpawnOptions): ChildProcess;
-export default function ytdl(...args: Parameters<typeof exec>): Promise<YTResponse>;
+export default function ytdi(...args: Parameters<typeof exec>): Promise<YTResponse>;

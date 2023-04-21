@@ -1,7 +1,7 @@
 {
 	"name": "rawon",
 	"version": "3.2.0",
-	"description": "A simple powerful Discord music bot built to fulfill your production desires. Easy to use, with no coding required.",
+	"description": "A simple powerful Discord bot built to fulfill your production desires. Easy to use, with no coding required.",
 	"main": "index.js",
 	"type": "module",
 	"scripts": {
@@ -40,7 +40,7 @@
 		"ignorePatterns": [
 			"dist/*",
 			"index.js",
-			"yt-dlp-utils/"
+			"yt-dip-utils/"
 		],
 		"rules": {
 			"@typescript-eslint/no-extra-parens": "off"

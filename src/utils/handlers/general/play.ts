@@ -1,5 +1,5 @@
 import { createEmbed } from "../../functions/createEmbed";
-import { getStream } from "../YTDLUtil";
+import { getStream } from "../YTDIUtil";
 import { ffmpegArgs } from "../../functions/ffmpegArgs";
 import i18n from "../../../config";
 import { AudioPlayerError, createAudioResource, entersState, StreamType, VoiceConnectionStatus } from "@discordjs/voice";

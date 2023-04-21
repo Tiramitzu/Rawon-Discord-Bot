@@ -1,5 +1,5 @@
 import { BasicYoutubeVideoInfo } from "../../typings";
-import ytdl, { exec } from "../../../yt-dlp-utils";
+import ytdi, { exec } from "../../../yt-dip-utils";
 import { soundcloud } from "./SoundCloudUtil";
 import { streamStrategy } from "../../config";
 import { checkQuery } from "./GeneralUtil";
@@ -51,7 +51,7 @@ export async function getInfo(url: string): Promise<BasicYoutubeVideoInfo> {
             url: rawPlayDlVideoInfo.video_details.url
         };
     }
-    return ytdl(url, {
+    return ytdi(url, {
         dumpJson: true
     });
 }

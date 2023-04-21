@@ -2,7 +2,7 @@ import { Song, SearchTrackResult, SpotifyTrack } from "../../../typings";
 import { Rawon } from "../../../structures/Rawon";
 import { checkQuery } from "./checkQuery";
 import { youtube } from "../YouTubeUtil";
-import { getInfo } from "../YTDLUtil";
+import { getInfo } from "../YTDIUtil";
 import { Playlist, SearchResult, Video, VideoCompact } from "youtubei";
 import { URL } from "node:url";
 

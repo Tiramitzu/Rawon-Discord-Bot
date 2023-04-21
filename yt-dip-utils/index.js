@@ -35,7 +35,7 @@ function json(str) {
 
 export async function downloadExecutable() {
     if (!existsSync(exePath)) {
-        console.info("[INFO] Yt-dlp couldn't be found, trying to download...");
+        console.info("[INFO] Yt-dip couldn't be found, trying to download...");
         const releases = await got.get("https://api.github.com/repos/yt-dlp/yt-dlp/releases?per_page=1").json();
         const release = releases[0];
         const asset = release.assets.find((asset) => asset.name === filename);
@@ -45,7 +45,7 @@ export async function downloadExecutable() {
                 writeFileSync(exePath, x, { mode: 0o777 });
             }).then(resolve).catch(reject);
         });
-        console.info("[INFO] Yt-dlp has been downloaded.");
+        console.info("[INFO] Yt-dip has been downloaded.");
     }
 }
 
@@ -54,7 +54,7 @@ export const exec = (url, options = {}, spawnOptions = {}) => spawn(exePath, arg
     ...spawnOptions
 });
 
-export default async function ytdl(url, options = {}, spawnOptions = {}) {
+export default async function ytdi(url, options = {}, spawnOptions = {}) {
     const proc = exec(url, options, spawnOptions);
     let data = "";
 
